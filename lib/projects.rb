@@ -1,4 +1,4 @@
-class Projects
+class Project
   attr_accesor :name, :id
 
   def initialize(attributes)
@@ -14,7 +14,7 @@ class Projects
   def method_name
 
   end
-  
+
   def method_name
 
   end
