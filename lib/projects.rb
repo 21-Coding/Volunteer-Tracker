@@ -8,10 +8,18 @@ class Project
   end
 
   def self.all
-
+    returned_projects = DB.exec('SELECT * FROM projects;')
+projects = []
+returned_projects.each() do |author|
+  name = project.fetch('name')
+  id = project.fetch('id').to_i
+  projects.push(Project.new({:name => name, :id => id}))
   end
+  returned_projects
+end
 
-  def self.search
+
+  def self.search(v)
 
   end
 
